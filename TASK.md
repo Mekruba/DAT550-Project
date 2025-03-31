@@ -4,3 +4,5 @@
 - Train a classifier for the hyperpartisan news detection
 
 - More details on the task is defined [here](ReadingMaterial/kiesel_2019c.pdf)
+
+- The article can be read [here](https://www.buzzfeednews.com/article/craigsilverman/inside-the-partisan-fight-for-your-news-feed)
