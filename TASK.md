@@ -1,5 +1,5 @@
 # 4. Hyperpartisan new detection
-- Use the labelled data for hyperpartisan news detection here https://github.com/BuzzFeedNews/2017-08-partisan-sites-and-facebook-pagesLinks 
+- Use the labelled data for hyperpartisan news detection here https://github.com/BuzzFeedNews/2017-08-partisan-sites-and-facebook-pages/tree/master
 
 - Train a classifier for the hyperpartisan news detection
 
