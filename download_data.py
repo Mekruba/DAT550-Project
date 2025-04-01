@@ -49,4 +49,3 @@ if not os.listdir(extract_folder):  # Only extract if folder is empty
     print(f"All files extracted to: {extract_folder}")
 else:
     print("Extracted files already exist, skipping extraction.")
-
