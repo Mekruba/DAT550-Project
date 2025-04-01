@@ -10,6 +10,10 @@ import json
 
 def xml2json(xml_file, output_file=None, chunk_size=1000):
     """Convert XML to JSONL with memory-efficient streaming"""
+
+    start_time = time.time()
+
+
     if not output_file:
         basename = os.path.splitext(xml_file)[0]
         output_file = f"{basename}.jsonl"
@@ -51,6 +55,11 @@ def xml2json(xml_file, output_file=None, chunk_size=1000):
             f.write(json.dumps(record, ensure_ascii=False) + '\n')
 
     print(f"Success! Converted {xml_file} to {output_file}")
+
+    end_time = time.time()
+    ex_time = end_time - start_time
+    print(f"Execution time: {ex_time:.2f} seconds")
+
     return True
 
 def main():
@@ -60,13 +69,10 @@ def main():
     
     args = parser.parse_args()
 
-    start_time = time.time()
 
     xml2json(args.input_file,args.output)
 
-    end_time = time.time()
-    ex_time = end_time - start_time
-    print(f"Execution time: {ex_time:.2f} seconds")
+    
     sys.exit(0)
 
 if __name__ == "__main__":
