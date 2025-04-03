@@ -2,13 +2,11 @@ import wget
 import os
 import zipfile
 
-
 download_folder = "Webis-data"
 os.makedirs(download_folder, exist_ok=True)
 
 file_url = "https://zenodo.org/api/records/5776081/files-archive"
 file_path = os.path.join(download_folder, 'data.zip')
-
 
 # Download step
 if not os.path.exists(file_path):
