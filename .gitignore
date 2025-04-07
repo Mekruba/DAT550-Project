@@ -4,3 +4,5 @@ preprocessing/data
 preprocessing/__pycache__
 
 test.py
+
+\venv
