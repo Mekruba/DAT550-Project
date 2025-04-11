@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 ## Training and test data 
-The training and test data can be fetched with `downloaded_data.py` file, then preprocessed from xml into Json files, such as shown below
+The training and test data can be fetched with `downloaded_data.py` file, then preprocessed with `preprocess.py` to process the xml files into json files. The data files should have the path as shown below.
 - `preprocessing/data/articles-training-byarticle.jsonl` – Training articles  
 - `preprocessing/data/ground-truth-training-byarticle.jsonl` – Training labels  
 - `preprocessing/data/articles-test-byarticle.jsonl` – Test articles  
