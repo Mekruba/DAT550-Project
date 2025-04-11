@@ -1,3 +1,17 @@
-# DAT550-Project
+# Hyperpartisan News Detection with CNN and Decision tree
 
-Overleaf: https://www.overleaf.com/project/67ea4c36d7c20136ce6518a9
+This project is part of the DAT550 course and aims to detect hyperpartisan news articles using a Convolutional Neural Network (CNN) built with TensorFlow/Keras.
+
+## 📂 Project Structure
+
+- `preprocessing/data/articles-training-byarticle.jsonl` – Training articles  
+- `preprocessing/data/ground-truth-training-byarticle.jsonl` – Training labels  
+- `preprocessing/data/articles-test-byarticle.jsonl` – Test articles  
+- `preprocessing/data/ground-truth-test-byarticle.jsonl` – Test labels  
+
+## ⚙️ Requirements
+
+Install dependencies using:
+
+```bash
+pip install -r requirements.txt
