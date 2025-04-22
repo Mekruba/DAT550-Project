@@ -32,6 +32,8 @@ def xml2json(xml_file, output_file=None, chunk_size=1000):
                 
                 article = {
                     "id": element.get("id"),
+                    "hyperpartisan": element.get("hyperpartisan"),
+                    "bias": element.get("bias"),
                     "published-at": element.get("published-at"),
                     "title": element.get("title"),
                     "content": " ".join(text_content),
